@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="Priyanshymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Home.css">
+    <title>www.priyanshdeveloper/portfolio</title>
+    <link rel="icon" href="./image/logo.png">
+    <style>
+        .feedback-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <!-- Logo and -----------------Marquee portfolio------------------------------ -->
+        <div class="logo-marquee">
+            <img class="logo" src="./image/priyansh.webp" alt="">
+            <h2 class="logo-name">Priyansh, Web Developer</h2>
+            <!-- <marquee class="marquee" behavior="header" direction="moonIcon">Portfolio Portfolio Portfolio</marquee> -->
+        </div>
+        <!-- Logo and -----------------Marquee portfolio------------------------------ -->
+
+        <!-- Resume Downloading--------------------------------------------------------- -->
+        <div class="social-icon">
+            <a href="./Resume/IT.pdf" target="_blank">
+                <button class="resume">Resume</button>
+            </a>
+        </div>
+        <!-- Resume Downloading--------------------------------------------------------- -->
+
+        <!-- Navbar------------------------------------------------------------------ -->
+        <div class="navbar">
+            <nav class="nav">
+                <ul>
+                    <a href="./index.html">
+                        <li class="home-icon-text">Home</li>
+                    </a>
+                    <a href="#About">
+                        <li class="about-icon-text">About</li>
+                    </a>
+                    <a href="#Skills">
+                        <li class="skill-icon-text">Skills</li>
+                    </a>
+                    <a href="#Projects">
+                        <li class="project-icon-text">Project's</li>
+                    </a>
+                    <a href="#Contact">
+                        <li class="contact-icon-text">Contact</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <!-- Navbar------------------------------------------------------------------ -->
+
+        <!--Hero Section-------------------------------------------------------------- -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="img-text">Hii <span>!</span> MY SELF <br> <span>PRIYANSHU SHARMA</span></h1>
+                <h2 class="img-paragraph">Hey, my name is Priyanshu Sharma and I am a MERN stack Developer <br> who builds responsive and professional websites.</h2>
+        
+                <div class="btn-container">
+                    <a href="./Login.html"><button class="log-btn"><i class="fa-solid fa-right-to-bracket"></i> LogIn</button></a>
+                    <a href="./Sign.html"><button class="sign-btn"><i class="fa-solid fa-right-to-bracket"></i> SignIn</button></a>
+                </div>
+            </div>
+            <div class="hero-img-container">
+                <img class="hero-img" src="./image/hero.jpg" alt="Hero Image">
+            </div>
+        </section>
+        
+        <!--Hero Section-------------------------------------------------------->
+
+        <!-- Sidebar---------------------------------------------------------------- -->
+
+        <div class="sidebar" id="sidebar">
+            <h1 class="sidebar-header">Welcome 🧑‍💻</h1>
+            <!-- <textarea class="sidebar-input" type="text" required placeholder="Write a feedback"></textarea> -->
+            <textarea class="sidebar-input" type="text" id="feedback" placeholder="Write Something."></textarea>
+            <button class="sidebar-send" onclick="submitFeedback()">Send</button>
+            <button class="sidebar-close" id="sidebarClose">Close</button>
+        </div>
+        <button class="sidebar-open" id="sidebarOpen"><i class="fa-solid fa-door-open"></i><br>Open</button>
+
+        <!-- Sidebar---------------------------------------------------------------- -->
+
+        <!-------------------------------------- About section------------------------------------------------------------- -->
+        <div class="About-section">
+
+
+            <h1 id="About" class="about-me">ABOUT ME</h1>
+
+            <h3 class="about-dec">
+                Hello! I'm Priyanshu Sharma, a passionate and dedicated student of technology. I completed my 10th grade
+                in 2019 and my 12th grade in 2021, where I developed a deep interest in computer science and technology.
+                This led me to pursue a Bachelor of Computer Applications (BCA), which I successfully completed in 2024.
+
+                Throughout my academic journey, I have honed my skills in various programming languages, tools, and
+                frameworks, with a focus on creating meaningful, user-centric digital experiences. I am always excited
+                to learn and apply new technologies to solve real-world problems and to make a significant impact in the
+                tech world.</h3>
+            <button class="about-btn" id="readMore">Read more</button>
+            <img class="about-img" src="./image/priyansh.jpg" alt="">
+        </div>
+        <!-- --------------------------------About section------------------------------------------------------------- -->
+
+        <!-- -------------------------------Skill Section---- -------------------------------------------------------------->
+        <div class="skill-section">
+
+            <h1 id="Skills" class="skill">Skill's</h1>
+
+            <h3 class="skill-list">
+                1. Front-End Development: Expertise in building responsive, user-friendly, and professional
+                websites using modern frameworks and tools.<br><br><br>
+
+                2. Core Technologies: Proficient in HTML, CSS, JavaScript, and React.js for dynamic and interactive
+                web applications. <br><br><br>
+
+                3. Responsive Design: Skilled in creating websites optimized for all devices, ensuring seamless user
+                experiences across desktops, tablets, and mobile devices.<br><br><br>
+
+                4. UI/UX Focus: Strong understanding of design principles to create visually appealing and
+                functional user interfaces. <br><br><br>
+
+                5. Version Control: Familiarity with Git and GitHub for efficient code collaboration and version
+                management. <br><br><br>
+
+                6. Soft Skills: Highlight communication, teamwork, and adaptability—essential for collaborative
+                projects.
+            </h3>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-circle">
+                    <span>HTML</span>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-circle">
+                    <span>CSS</span>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-circle">
+                    <span>JS</span>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-circle">
+                    <span>React</span>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------Skill Section---- ------------------------------------------------------------->
+
+        <!-- ---------------------------------------Project's Section---------------------------------------- -->
+
+        <div id="Projects" class="project-container">
+            <h1 class="project-name">Projects</h1>
+
+            <div class="card-grid">
+
+                <!-- first project and its description -->
+                <div class="fst">
+                    <div class="fst-proj">Delivery Dashboard
+                        <div class="fst-proj-desc">
+                            <a class="fst-proj-desc-link" href="./Project/Dashboard.html#delivery">See</i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- first project and its description -->
+
+
+                <!-- Secand project and its description  -->
+                <div class="sec">
+                    <div class="sec-proj">Music
+                        <div class="sec-proj-desc">
+                            <a class="sec-proj-desc-link" href="./Project/Music.html#music">See</i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Secand project and its description  -->
+
+
+                <!-- Third project and its description  -->
+                <div class="thr">
+                    <div class="thr-proj">E-commerce
+                        <div class="thr-proj-desc">
+                            <a class="thr-proj-desc-link" href="./Project/e-commerce/E-commerce.html">See</i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third project and its description  --for
+                <!-- Fourth project and its description  -->
+                <div class="for">
+                    <div class="for-proj">Tic Tac Toe Game
+                        <div class="for-proj-desc">
+                            <a class="for-proj-desc-link" href="./Project/TicTacToeGame.html#Tictactoegame">See</i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth project and its description  -->
+
+
+                <!-- Fifth project and its description  -->
+                <div class="fif">
+                    <div class="fif-proj">Password Generated
+                        <div class="fif-proj-desc">
+                            <a class="fif-proj-desc-link" href="./Project/password-generator/Pass.html">See</i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fifth project and its description  -->
+
+
+                <!-- Sixth project and its description  -->
+                <div class="six">
+                    <div class="six-proj">Tour & Travels
+                        <div class="six-proj-desc">
+                            <a class="six-proj-desc-link" href="./Project/T&t.html#tour&travels">See</i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sixth project and its description  -->
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------Project's Section---------------------------------------- -->
+
+    <!-- -------------------------------Contact Section---- ------------------------------------------------------------->
+
+    <div class="contact-container">
+        <div class="contact-form">
+
+            <h1 id="Contact" class="contact-me">Contact Me</h1>
+
+            <!-- <div>
+                <label class="contact-number" for="contact-number">+91 8780928205</label><br>
+                <label class="contact-email" for="email">priyanshkhandelwal835@gmail.com</label>
+            </div> -->
+
+            <div class="contact-form">
+
+                <form>
+
+                    <input class="contact-input-name" type="text" name="Name" placeholder="Your Name" required>
+
+                    <input class="contact-input-email" type="email" name="email" placeholder="Your Email" required>
+
+                    <textarea class="contact-input-message" name="Message" rows="3"
+                        placeholder="Your Message"></textarea>
+
+                    <button id="submit" type="submit" class="contact-submit">Submit</button>
+
+                    <a href="./Resume/IT.pdf" target="_blank" class="co-re-btn">Resume
+                    </a>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- -------------------------------Contact Section---- ------------------------------------------------------------->
+
+    <!--------------------------------------- Footer Section------------------------- -->
+    <div class="footer-container">
+
+        <div class="footer-des">
+            <h1 class="footer-des-name">
+                Description:
+            </h1>
+            <h2 class="footer-des-par">
+                "Aspiring Full Stack Developer with a passion for creating responsive and user-friendly web
+                applications."
+            </h2>
+        </div>
+
+        <div class="footer-links">
+            <h1 class="quick-links">Quick Links:</h1>
+            <a class="footer-a" href="./index.html">Home</a>
+            <a class="footer-a" href="#About">About Me</a>
+            <a class="footer-a" href="#Skills">Skill's</a>
+            <a class="footer-a" href="#Project">Project</a>
+            <a class="footer-a" href="#Contact">Contact</a>
+            <a class="footer-a" href="./Resume/IT.pdf" target="_blank">Resume </a>
+        </div>
+
+        <div class="social">
+            <h1 class="social-links">Social Links:</h1>
+            <!-- <a href="">LinkedIn</a> -->
+            <a href="https://www.linkedin.com/in/priyansh-khandelwal-72177533b/" target="_blank"> <i
+                    class="fa-brands fa-linkedin"></i></a>
+            <!-- <a href="">GitHub</a> -->
+            <a href="https://github.com/khandelwalpriyansh?tab=repositories" target="_blank"> <i
+                    class="fa-brands fa-github"></i></a>
+            <!-- <a href="">Instagram</a> -->
+            <a href="https://www.instagram.com/p/DC1ditzvE-C/?next=%2F&hl=en" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="footer-contact">
+            <h1 class="footer-contact-name">Contact Info:</h1>
+
+            <h3 class="footer-email">priyanshkhandelwal835@gmail.com</h3>
+
+            <h3 class="footer-number">+91 8780928205</h3>
+
+            <h3 class="footer-loc">Gujarat, India</h3>
+        </div>
+
+        <div class="copyright">© 2024 Priyansh Khandelwal. All Rights Reserved.
+        </div>
+
+    </div>
+    <!--------------------------------------- Footer Section------------------------- -->
+</body>
+<script src="./app.js"></script>
+
+</html>
